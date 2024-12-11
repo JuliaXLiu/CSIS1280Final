@@ -18,7 +18,7 @@ function RollDice(){
 
 
 function CorrectDigit(num){
-    if(num % 10 == 0){
+    if(num / 10 < 1){
         return "0".concat(num.toString());
     }else{
         return num.toString();
